@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:src="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:riv_corner_radius="10dp"
+        tools:layout_editor_absoluteY="37dp"
+        android:id="@+id/ImageView"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="37dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YNDropDownMenu"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:id="@+id/TitleText"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="YNDropDownMenu"
+            android:textSize="11dp"
+            android:id="@+id/AutherText"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:text="The eligible dropdown menu, "
+            android:textSize="12dp"
+            android:id="@+id/DescriptionText"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:text="The eligible dropdown menu, "
+            android:textSize="12dp"
+            android:id="@+id/StarText"
+            />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
