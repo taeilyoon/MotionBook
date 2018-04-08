@@ -2,9 +2,13 @@ package com.example.yuntaeil.motionbooks.Views.LibraryDetailView;
 
 import android.content.Context;
 import android.content.Intent;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.ActivityOptionsCompat;
+import android.support.v4.util.Pair;
 import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -50,16 +54,25 @@ public class Library_Detail_Activity extends AppCompatActivity {
 
         ViewCompat.setTransitionName(HeaderImageView, VIEW_NAME_HEADER_IMAGE);
         ViewCompat.setTransitionName(TitleText, VIEW_NAME_HEADER_TITLE);
+
         BindDatawithView();
     }
 
     private void BindDatawithView() {
+        TitleText.setText(Data.title);
+        DescriptionText.setText(Data.description);
+        StarText.setText(""+Data.gitStar);
     }
+
 
     public static void ShowDetail(LibraryModel data, Context context){
         Library_Detail_Activity.Data = data;
+        context.startActivity(new Intent(context, Library_Detail_Activity.class))
+        ;
 
-
-        context.startActivity(new Intent(context, Library_Detail_Activity.class));
+    }
+    public static void ShowDetail(LibraryModel data,  Context context, Intent intent, ActivityOptionsCompat compat){
+        ActivityCompat.startActivity(context, intent, compat.toBundle());
+        Library_Detail_Activity.Data = data;
     }
 }

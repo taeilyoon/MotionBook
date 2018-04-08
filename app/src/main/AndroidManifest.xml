@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Views.LibraryDetailView.Library_Detail_Activity"></activity>
+        <activity android:name=".Views.LibraryDetailView.Library_Detail_Activity" />
+        <activity android:name=".UnlockExampleActivity"></activity>
     </application>
 
 </manifest>

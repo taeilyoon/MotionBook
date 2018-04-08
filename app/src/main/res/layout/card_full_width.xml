@@ -7,60 +7,106 @@
     android:orientation="vertical">
 
     <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ImageView"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:src="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:riv_corner_radius="10dp"
-        tools:layout_editor_absoluteY="37dp"
-        android:id="@+id/ImageView"
-        />
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="10dp" />
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="227dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="8dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="37dp">
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.488">
 
         <TextView
+            android:id="@+id/TitleText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="YNDropDownMenu"
+            android:textColor="@color/text_color"
             android:textSize="15dp"
-            android:textStyle="bold"
-            android:id="@+id/TitleText"
-            />
+
+            android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/AutherText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
             android:text="YNDropDownMenu"
-            android:textSize="11dp"
-            android:id="@+id/AutherText"
-            />
+            android:textColor="@color/text_color"
+            android:textSize="11dp" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_marginTop="10dp"
-            android:text="The eligible dropdown menu, "
-            android:textSize="12dp"
             android:id="@+id/DescriptionText"
-            />
-        <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="207dp"
             android:layout_height="50dp"
             android:layout_marginTop="10dp"
             android:text="The eligible dropdown menu, "
-            android:textSize="12dp"
-            android:id="@+id/StarText"
-            />
+            android:textColor="@color/text_color_gray"
+            android:textSize="12dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_hashtag" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MAP"
+                android:textColor="@color/text_color_red"
+                android:textSize="11dp" />
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_hashtag" />
+
+            <TextView
+                android:id="@+id/StarText"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="900"
+                android:textColor="@color/text_color_gray"
+                android:textSize="11dp" />
+
+        </LinearLayout>
 
 
     </LinearLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+
+        android:layout_marginBottom="0dp"
+        android:background="#ACACAC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="20dp" />
 
 </android.support.constraint.ConstraintLayout>

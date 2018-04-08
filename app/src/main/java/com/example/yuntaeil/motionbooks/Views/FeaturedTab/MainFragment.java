@@ -18,6 +18,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.example.yuntaeil.motionbooks.Helper.DataManager;
 import com.example.yuntaeil.motionbooks.Model.LibraryModel;
 import com.example.yuntaeil.motionbooks.R;
 import com.example.yuntaeil.motionbooks.Views.LibraryDetailView.Library_Detail_Activity;
@@ -69,14 +70,9 @@ public  class MainFragment extends Fragment {
     }
 
     public void initData() {
-        mDatas = new ArrayList<>();
-        LibraryModel tempData = new LibraryModel();
-        tempData.author = "test";
-        tempData.title = "test";
-        tempData.gitStar = 999;
-        tempData.type = "RecyclerView";
 
-        mDatas.add(tempData);
+        mDatas = new ArrayList<>();
+        mDatas.addAll(DataManager.getInstance().LibraryList);
 
     }
 
@@ -93,11 +89,11 @@ public  class MainFragment extends Fragment {
                         getActivity(),
                         new Pair<View, String>(view.findViewById(R.id.card_image),
                                 Library_Detail_Activity.VIEW_NAME_HEADER_IMAGE),
-                        new Pair<View, String>(view.findViewById(R.id.tv_num),
+                        new Pair<View, String>(view.findViewById(R.id.TitleText),
                                 Library_Detail_Activity.VIEW_NAME_HEADER_TITLE));
 
-                ActivityCompat.startActivity(getActivity(), intent, activityOptions.toBundle());
-
+                //ActivityCompat.startActivity(getActivity(), intent, activityOptions.toBundle());
+                Library_Detail_Activity.ShowDetail(mDatas.get(position),getContext(),intent,activityOptions);
 
                // Library_Detail_Activity.ShowDetail(mDatas.get(position),getContext());
             }

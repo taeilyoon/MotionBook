@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_margin="10dp"
     android:orientation="vertical">
 
 
@@ -11,26 +13,57 @@
         android:layout_height="wrap_content"
         android:id="@+id/card_image"
         android:src="@drawable/testgif" />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/TitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:gravity="center"
+            android:text="Title"
+            android:textColor="@color/text_color"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/NEWText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:gravity="left"
+            android:text="NEW"
+            android:textColor="@color/text_color_red"
+            android:textSize="11dp"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </android.support.constraint.ConstraintLayout>
     <TextView
-        android:id="@+id/tv_num"
-        android:layout_marginTop="10.5dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textColor="@color/text_color"
-        android:textSize="14dp"
-        android:textStyle="bold"
-        android:text="Title" />
-    <TextView
+        android:id="@+id/AutherText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/text_color_gray"
         android:textSize="12dp"
         android:textStyle="bold"
         android:text="Author"/>
-    <ImageView
-        android:layout_width="16dp"
-        android:layout_height="16dp"
-        android:src="@drawable/icstar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/Star"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/icstar"/>
+        <TextView
+            android:id="@id/StarText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.3K"
+            android:textSize="12dp"
+            android:textColor="@color/text_color_gray"
+            />
+    </LinearLayout>
     
 </LinearLayout>

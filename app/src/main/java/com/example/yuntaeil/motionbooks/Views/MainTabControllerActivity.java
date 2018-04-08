@@ -34,11 +34,12 @@ public class MainTabControllerActivity extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             instance = this;
 
+            setTheme(R.style.AppTheme);
 
             setTheme(R.style.AppTheme);
             setContentView(R.layout.activity_main);
             ButterKnife.bind(this);
-
+            viewPager.setOffscreenPageLimit(3);
             InitTabBar();
         }
 

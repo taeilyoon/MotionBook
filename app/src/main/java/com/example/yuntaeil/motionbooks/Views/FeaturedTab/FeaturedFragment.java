@@ -61,7 +61,7 @@ public class FeaturedFragment extends Fragment {
                 .setupWithViewPager(mViewPager);
 
 
-        Log.d(TAG, "onCreateView. IS Gone" );
+        Log.d(TAG, "onCreate : " );
         return view;
 
     }

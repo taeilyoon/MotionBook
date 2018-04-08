@@ -1,29 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 <LinearLayout
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <SearchView
+    <android.support.v7.widget.ActionBarContainer
         android:layout_width="match_parent"
-        android:layout_height="50dp" >
+        android:layout_height="60dp"
+        android:background="@color/colorPrimaryDark"
+        >
 
-        <View
-            android:id="@+id/view"
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/SearchView"
+            android:layout_gravity="bottom"
             android:layout_width="match_parent"
-            android:layout_height="0.1dp"
-            android:layout_weight="1"
-            android:background="#ACACAC" />
-    </SearchView>
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            >
+
+        </android.support.v7.widget.SearchView>
+
+
+    </android.support.v7.widget.ActionBarContainer>
+
 
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
     </android.support.v7.widget.RecyclerView>
+
+    <co.lujun.androidtagview.TagContainerLayout
+        android:id="@+id/tagView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:padding="10dp"
+        app:container_enable_drag="false"
+        app:horizontal_interval="10dp"
+        app:vertical_interval="10dp"
+        app:tag_clickable="true"
+        app:tag_theme="pure_teal" />
+
 </LinearLayout>
 
 

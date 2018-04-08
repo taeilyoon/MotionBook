@@ -7,6 +7,7 @@ package com.example.yuntaeil.motionbooks.Model;
 public class LibraryModel {
 
     public String title;
+    public String description;
     public String author;
     public String type;
     public String gifUrl;

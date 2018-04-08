@@ -1,4 +1,4 @@
-package com.example.yuntaeil.motionbooks.Views.FeaturedTab;
+package com.example.yuntaeil.motionbooks.Views.SearchTab;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -16,11 +16,11 @@ import java.util.List;
  * Cre®ated by hugeterry(http://hugeterry.cn)
  */
 
-public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyViewHolder> {
+public class SearchRecyclerAdapter extends RecyclerView.Adapter<SearchRecyclerAdapter.MyViewHolder> {
     private Context mContext;
     private List<LibraryModel> mDatas;
 
-    public RecyclerAdapter(Context context, List<LibraryModel> datas) {
+    public SearchRecyclerAdapter(Context context, List<LibraryModel> datas) {
         mContext = context;
         mDatas = datas;
     }
@@ -28,7 +28,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         return new MyViewHolder(LayoutInflater.from(
-                mContext).inflate(R.layout.card_feature, parent, false));
+                mContext).inflate(R.layout.card_full_width, parent, false));
     }
 
     @Override

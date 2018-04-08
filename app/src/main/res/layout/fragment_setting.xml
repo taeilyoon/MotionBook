@@ -10,6 +10,14 @@
         android:layout_height="40dp"
         android:background="@color/colorPrimaryDark">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Setting"
+            android:layout_gravity="center"
+
+            />
+
     </android.support.v7.widget.ActionBarContainer>
     <ScrollView
         android:layout_width="match_parent"
@@ -127,13 +135,14 @@
                     android:background="#ACACAC"/>
 
                 <Button
-                    android:id="@+id/LogoutButton"
+                    android:id="@+id/Unlock_Example"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@android:color/white"
                     android:gravity="left|center_vertical"
                     android:paddingLeft="30dp"
                     android:text="Unlock example"
+
                     android:textColor="@color/text_color_red" />
 
                 <View
@@ -176,7 +185,7 @@
                     android:background="#ACACAC"/>
 
                 <Button
-                    android:id="@+id/checkPolicyButton"
+                    android:id="@+id/AppStoreReview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@android:color/white"
@@ -193,7 +202,7 @@
                     android:background="#ACACAC"/>
 
                 <Button
-                    android:id="@+id/locationBasedServicePolicyButton"
+                    android:id="@+id/EmailtoDeveloper"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@android:color/white"
@@ -245,7 +254,7 @@
                     android:background="#ACACAC"/>
 
                 <Button
-                    android:id="@+id/locationBasedServicPolicyButton"
+                    android:id="@+id/RefreshData"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@android:color/white"
@@ -262,7 +271,7 @@
                     android:background="#ACACAC"/>
 
                 <Button
-                    android:id="@+id/locationBasedServicPolicyButton"
+                    android:id="@+id/OpenSourceLicense"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@android:color/white"

@@ -37,6 +37,10 @@ dependencies {
 
     //transition
     compile 'me.immortalz:transitionhelper:2.3.4'
+//tagView
+    compile 'co.lujun:androidtagview:1.1.4'
+
+    compile 'com.google.firebase:firebase-storage:11.8.0'
 
     compile 'com.android.support:customtabs:27.0.2'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
