@@ -43,10 +43,10 @@ public class FeaturedFragment extends Fragment {
             }
         initViewPager();
         mImageArray = new int[]{
+                R.mipmap.bg,
                 R.mipmap.bg_android,
-                R.mipmap.bg_ios,
                 R.mipmap.bg_js,
-                R.mipmap.bg_other};
+                R.mipmap.bg};
         mColorArray = new int[]{
                 android.R.color.holo_blue_light,
                 android.R.color.holo_red_light,

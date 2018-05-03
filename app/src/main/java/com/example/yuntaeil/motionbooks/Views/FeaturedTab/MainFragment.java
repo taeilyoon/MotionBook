@@ -100,7 +100,7 @@ public  class MainFragment extends Fragment {
 
             @Override
             public void onLongItemClick(View view, int position) {
-                Toast.makeText(getContext(),position+"번 째 아이템 롱 클릭",Toast.LENGTH_SHORT).show();
+
             }
         }));
 

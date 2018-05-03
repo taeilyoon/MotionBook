@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#A6AEB7</color>
+    <color name="colorPrimaryDark">#EE165B</color>
     <color name="colorAccent">#EE165B</color>
-    <color name="tabUnselectedIconColor" />
+    <color name="tabUnselectedIconColor"> #A6AEB7</color>
 
     <color name="text_color_gray">#5C6774</color>
     <color name="text_color_white">#A6AEB7</color>

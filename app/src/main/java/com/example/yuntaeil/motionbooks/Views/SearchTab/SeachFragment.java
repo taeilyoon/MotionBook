@@ -59,6 +59,7 @@ public class SeachFragment extends Fragment {
 
             @Override
             public boolean onQueryTextChange(String newText) {
+                search(newText);
                 return false;
             }
         });
@@ -87,7 +88,7 @@ public class SeachFragment extends Fragment {
             @Override
             public void onTagClick(int position, String text) {
                 Toast.makeText(getContext(),text+"가 클릭 됨", Toast.LENGTH_LONG).show();
-                search(text);
+                searchView.setQuery(text, true);
             }
 
             @Override
@@ -100,6 +101,9 @@ public class SeachFragment extends Fragment {
 
             }
         });
+        tagView.setTagTextColor(R.color.text_color_white);
+        tagView.setTagBackgroundColor(R.color.colorAccent);
+
 
     }
     public void search(String charText) {

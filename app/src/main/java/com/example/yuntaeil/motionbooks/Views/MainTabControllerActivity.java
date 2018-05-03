@@ -49,7 +49,6 @@ public class MainTabControllerActivity extends AppCompatActivity {
             PagerAdapter adapter = new MainPagerAdapter(getSupportFragmentManager());
             viewPager.setAdapter(adapter);
 
-            final String[] colors = getResources().getStringArray(R.array.default_preview);
 
             final NavigationTabBar navigationTabBar = (NavigationTabBar) findViewById(
                     R.id.ntb_horizontal);
@@ -57,35 +56,29 @@ public class MainTabControllerActivity extends AppCompatActivity {
             final ArrayList<NavigationTabBar.Model> models = new ArrayList<>();
             models.add(
                     new NavigationTabBar.Model.Builder(
-                            getResources().getDrawable(R.drawable.ic_launcher_background),
-                            Color.parseColor(colors[0]))
+                            getResources().getDrawable(R.drawable.ic_home),R.color.colorAccent)
                             .title("Featured")
                             .badgeTitle("New")
                             .build()
             );
             models.add(
                     new NavigationTabBar.Model.Builder(
-                            getResources().getDrawable(R.drawable.ic_launcher_background),
-                            Color.parseColor(colors[0]))
-
+                            getResources().getDrawable(R.drawable.ic_search)
+                            ,R.color.colorAccent)
                             .title("Search")
                             .badgeTitle("with")
                             .build()
             );
             models.add(
                     new NavigationTabBar.Model.Builder(
-                            getResources().getDrawable(R.drawable.ic_launcher_background),
-                            Color.parseColor(colors[0]))
-
+                            getResources().getDrawable(R.drawable.ic_bookmark),R.color.colorAccent)
                             .title("Bookmark")
                             .badgeTitle("with")
                             .build()
             );
             models.add(
                     new NavigationTabBar.Model.Builder(
-                            getResources().getDrawable(R.drawable.ic_launcher_background),
-                            Color.parseColor(colors[0]))
-
+                            getResources().getDrawable(R.drawable.ic_setting),R.color.colorAccent)
                             .title("Setting")
                             .badgeTitle("with")
                             .build()

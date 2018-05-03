@@ -4,20 +4,23 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Views.MainTabControllerActivity">
+        </activity>
+        <activity android:name=".Views.LibraryDetailView.Library_Detail_Activity"/>
+        <activity android:name=".UnlockExampleActivity"/>
+
+        <activity android:name=".Views.Splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Views.LibraryDetailView.Library_Detail_Activity" />
-        <activity android:name=".UnlockExampleActivity"></activity>
     </application>
 
 </manifest>
